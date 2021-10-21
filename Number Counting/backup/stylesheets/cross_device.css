@@ -1,0 +1,446 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, blockquote, pre,
+abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+strike, strong, sup, tt, var,
+u, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/************************************************************************************************************************/
+cite, em {
+  font-style: italic;
+}
+p {
+	color: #555;
+	font: 16px/25px Bitter, Arial, sans-serif;	
+}
+a {
+	color: #0087cc;
+}
+a:hover {
+	color: #ff7b29;
+}
+.clearly{
+	color: black;
+	font-family: Bitter, Arial, sans-serif;
+}
+.byline {
+	color: #9799a7;
+	font-family: Georgia, Times, serif, Arial, sans-serif;
+	font-style: italic;
+	font-size: 14px;
+	line-height: 0px;
+}
+article:first-line{
+	line-height: 25px;
+}
+a div{ /*to override default color of hyperlinks*/
+	color: black;
+}
+a {/*this is to remove a small dash*/
+    text-decoration: none;
+}
+div{
+	font-size: 16px;
+}
+body{
+	overflow: hidden;	
+	
+}
+/**********************************************************************************************/
+nav#language_pos{
+	margin-top: 0.1em;
+	width: 3em;
+	border: 1px solid transparent;
+	text-align: center;
+}
+nav#language_pos  a:nth-child(2){
+	top: 1.5em;
+}
+nav#language_pos  a:nth-child(3){
+	top: 3em;
+}
+nav#language_pos  a{
+	position: absolute;
+	margin-right: 0.5em;
+	right: 0;/*this made use of nav#language_pos being 'relative' positioned*/
+	font-family: Courier, Arial, sans-serif;	
+	color: black;
+	width: 2.5em;
+	text-align: center;
+	border-radius: 1em;
+	box-sizing: border-box;
+	border-width: 0px;	
+	margin-top: 6px;
+	margin-bottom: 6px;
+	cursor: pointer;
+}
+nav#language_pos  a:hover{
+	border: 5px solid slategray; 
+	/*color: slategray;*/
+	margin-top: 1px;
+	margin-bottom: 2px;	
+}
+nav#language_pos  a.current-language{	
+	/*color: darkgray;*/
+	background: 	 radial-gradient(#22ef20, #1d978d);	
+	background:  -ms-radial-gradient(#22ef20, #1d978d);	
+	background: -moz-radial-gradient(#22ef20, #1d978d);	
+	background: -webkit-radial-gradient(#22ef20, #1d978d);	
+/*	border: 1px solid darkgray; */
+}
+nav#language_pos  a:active{
+	box-shadow:0.01em 0.01em 0.01em 2px silver inset;	
+}
+#language-unavailable{/*this is a pop-up message*/
+	display: none;
+	position: absolute;
+	border-radius: 10px;
+	width: 5em;	
+	padding: 0.5em;	
+	margin-right: 1em;
+	font-size: 0.7em;
+	right: 3.8em;
+	background-color: cyan;
+	box-shadow:0.01em 0.01em 0.01em 2px silver inset;	
+	text-align: center;
+	z-index: 10;
+}
+h1{
+	color: #950;
+	font-size: 16px;
+	font-family: "Lobster Two", Arial, sans-serif;
+	background: cyan;
+	display: block;
+	text-align: center;
+	border-radius: 10px;
+}
+section:first-of-type  h1{
+	margin-left: 25%;
+	width: 50%;
+}
+section:last-of-type  h1{
+	margin-left: 25%;
+	width: 50%;
+}
+section{
+	position: absolute;
+}
+section:first-of-type{
+	height: 60%;
+	width: 100%;
+}
+hr{
+	position: absolute;
+	width: 100%;
+	top: 60%;
+}
+section:last-of-type{
+	height: 35%;
+	top: 61%;
+	width: 100%;
+}
+.hundredstens{	/*this vertical separator is used for both section 1 and section 2*/
+	position: absolute;
+	left: 33%;
+	top: 20%;
+	height: 70%;
+	border: 1px solid black;
+}
+.tensones{/*this vertical separator is used for both section 1 and section 2*/
+	position: absolute;
+	left: 66%;
+	top: 20%;
+	height: 70%;
+	border: 1px solid black;	
+}
+
+table{
+	position: absolute;
+	border-collapse: separate;
+	border: 1px solid purple;
+	visibility: hidden;
+}
+section:first-of-type  tr{
+	padding: 2px;
+	border: 1px solid purple;
+}
+section:first-of-type  td{
+	padding: 2px;
+	border: 1px solid purple;
+}
+table:nth-of-type(2){
+	left: 3%;	
+	top: 20%;
+}
+table:nth-of-type(1){
+	left: 13%;	
+	top: 20%;
+}
+table:nth-of-type(3){
+	left: 23%;	
+	top: 20%;
+}
+table:nth-of-type(4){
+	left: 3%;	
+	top: 48%;
+}
+table:nth-of-type(5){
+	left: 13%;	
+	top: 48%;
+}
+table:nth-of-type(6){
+	left: 23%;	
+	top: 48%;
+}
+table:nth-of-type(7){
+	left: 3%;	
+	top: 76%;
+}
+table:nth-of-type(8){
+	left: 13%;	
+	top: 76%;
+}
+table:nth-of-type(9){
+	left: 23%;	
+	top: 76%;
+}
+table:nth-of-type(n+10){
+	border: 1px solid red;
+	top: 35%;	
+	visibility: hidden;
+}
+table:nth-of-type(n+10)  tr{
+	border-color: red;
+	padding: 5px;
+}
+table:nth-of-type(n+10)  td{
+	border-color: red;
+	padding: 5px;
+}
+table:nth-of-type(15){
+	left: 35%;	
+}
+table:nth-of-type(14){
+	left: 38%;	
+}
+table:nth-of-type(13){
+	left: 41%;	
+}
+table:nth-of-type(12){
+	left: 44%;	
+}
+table:nth-of-type(11){
+	left: 47%;	
+}
+table:nth-of-type(10){
+	left: 50%;	
+}
+table:nth-of-type(16){
+	left: 53%;	
+}
+table:nth-of-type(17){
+	left: 56%;	
+}
+table:nth-of-type(18){
+	left: 59%;	
+}
+table:nth-of-type(19){
+	left: 62%;	
+}
+section:first-of-type  .tensones ~ div{
+	position: absolute;
+	border: 1px solid blue;
+	padding: 6px;
+	left: 80%;
+	visibility: hidden;
+}
+#ten{
+	top: 20%;
+}
+#nine{
+	top: 27%;
+}
+#eight{
+	top: 34%;
+}
+#seven{
+	top: 41%;
+}
+#six{
+	top: 48%;
+}
+#five{
+	top: 55%;
+}
+#four{
+	top: 62%;
+}
+#three{
+	top: 69%;
+}
+#two{
+	top: 76%;
+}
+#one{
+	top: 83%;
+}
+#one:active + div{
+	animation: spin 2s forwards;	
+}
+@keyframes spin {  
+  100% {	
+    transform: translateX(-308px) scale(0.78);	
+	border-color: red;	
+	border-width: 2px;
+  }
+}
+/*Here comes SOME of the second section styling*/
+fieldset  label  div{
+	position: absolute;
+	top: 20%;
+}
+fieldset  label:nth-of-type(1)  div{
+	left: 10%;
+	color: purple;
+}
+fieldset  label:nth-of-type(2)  div{
+	left: 48%;
+	color: red;
+}
+fieldset  label:nth-of-type(3)  div{
+	left: 80%;
+	color: blue;
+}
+input[pattern="[0-9]"]{
+	position: absolute;
+	height: 50%;
+	width: 6.2%;
+	top: 35%;
+	font-size: 600%;
+}
+input[name="hundreds"],
+input[name="fake-hundreds"]{
+	left: 9.5%;
+	color: purple;
+}
+input[name="tens"],
+input[name="fake-tens"]{
+	left: 46%;
+	color: red;
+}
+input[name="ones"],
+input[name="fake-ones"]{
+	left: 78%;
+	color: blue;
+}
+input[name="fake-hundreds"],
+input[name="fake-tens"],
+input[name="fake-ones"]{
+	z-index: 0;
+}
+input[name="hundreds"],
+input[name="tens"],
+input[name="ones"]{
+	z-index: 1;
+}
+/****************************The 2 arrows +1 and -1*/
+aside{
+	position: absolute;
+	right: 1em;
+	width: 2.1em;
+}
+aside  div{
+	width: 1.5em;
+	height: 2em;
+	text-align: center;
+	line-height: 2em;
+}
+aside  div:after{
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: -0.75em;
+	content: "";
+	border: 1.5em solid transparent;
+}
+aside  div:hover{
+	cursor: pointer; 
+}
+#plus-one{
+	transition: transform 0.1s;
+	background-color: silver;
+	border: 1px solid silver;
+}
+#plus-one:hover{
+	transform: rotateX(20deg);
+}
+#plus-one:after{
+	border-bottom-color: silver;
+	bottom: 99%;
+}
+#plus-one:active{
+	border-color: brown;
+	background-color: brown;
+}
+#plus-one:active:after{
+	border-bottom-color: brown;
+}
+#minus-one{
+	margin-top: 0.1em;
+	background-color: gold;
+	border: 1px solid gold;
+}
+#minus-one:after{
+	border-top-color: gold;
+	top: 99%;
+}
+#minus-one:hover{
+	transform: rotateX(-20deg);
+}
+#minus-one:active:after{
+	border-top-color: brown;
+}
+#minus-one:active{
+	border-color: brown;
+	background-color: brown;
+}
+
